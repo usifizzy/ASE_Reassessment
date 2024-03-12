@@ -21,6 +21,7 @@ namespace ASE.Commands
         private Dictionary<string, IGraphicsCommand> graphicsCommands = new Dictionary<string, IGraphicsCommand>
         {
             { "circle", new CircleCommand() },
+            { "rectangle", new RectangleCommand() },
         };
 
 
@@ -51,6 +52,7 @@ namespace ASE.Commands
                     switch (parser.Command.ToLower())
                     {
                         case "circle":
+                        case "rectangle":
                             graphicsCommands[parser.Command.ToLower()].Execute(graphics, parser.Argument, canvas);
                             break;
                         default:
