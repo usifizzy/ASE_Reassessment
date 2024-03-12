@@ -21,7 +21,8 @@ namespace ASE.Commands
         private Dictionary<string, ICommand> basicCommands = new Dictionary<string, ICommand>
         {
             { "clear", new ClearScreen() },
-            { "pen", new PenCommand() },
+            { "pen", new PenCommand() }, 
+            { "fill", new FillCommand() },
         };
 
         public bool ContainsBasicCommand(string command)
@@ -52,6 +53,7 @@ namespace ASE.Commands
                     {
                         case "clear":
                         case "pen":
+                        case "fill":
                             basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
                             break;
 
