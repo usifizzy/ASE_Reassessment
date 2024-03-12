@@ -1,0 +1,6 @@
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.csproj.AssemblyReference.cache
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.Canvas.resources
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.MultiLineForm.resources
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.Properties.Resources.resources
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.csproj.GenerateResource.cache
+C:\Users\alabi\ASE\ASE_Reassessment\ASE\obj\Debug\ASE.csproj.CoreCompileInputs.cache

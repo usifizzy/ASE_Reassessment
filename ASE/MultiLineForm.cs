@@ -16,5 +16,25 @@ namespace ASE
         {
             InitializeComponent();
         }
+
+        private void ResetScript_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RunScriptBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void SaveScriptBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoadScriptBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
