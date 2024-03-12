@@ -22,6 +22,8 @@ namespace ASE.Commands
         {
             { "circle", new CircleCommand() },
             { "rectangle", new RectangleCommand() },
+            { "triangle", new TriangleCommand() },
+            { "concircle", new ConcentricCircleCommand() },
         };
 
 
@@ -53,6 +55,8 @@ namespace ASE.Commands
                     {
                         case "circle":
                         case "rectangle":
+                        case "triangle":
+                        case "concircle":
                             graphicsCommands[parser.Command.ToLower()].Execute(graphics, parser.Argument, canvas);
                             break;
                         default:
