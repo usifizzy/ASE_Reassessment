@@ -52,10 +52,20 @@
     <Compile Include="Canvas.Designer.cs">
       <DependentUpon>Canvas.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommandParser.cs" />
+    <Compile Include="MultiLineForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MultiLineForm.Designer.cs">
+      <DependentUpon>MultiLineForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Canvas.resx">
       <DependentUpon>Canvas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MultiLineForm.resx">
+      <DependentUpon>MultiLineForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +91,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Interface\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
