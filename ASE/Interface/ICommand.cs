@@ -1,7 +1,4 @@
-﻿
-using ASE_Programming_Lang;
-
-namespace ASE_Programming_Lang.Interface
+﻿namespace ASE.Interface
 {
     public interface ICommand
     {

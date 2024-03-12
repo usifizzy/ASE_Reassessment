@@ -53,6 +53,13 @@
       <DependentUpon>Canvas.cs</DependentUpon>
     </Compile>
     <Compile Include="CommandParser.cs" />
+    <Compile Include="Commands\BasicCommands.cs" />
+    <Compile Include="Commands\GraphicsCommands.cs" />
+    <Compile Include="Commands\Screen\PenCommand.cs" />
+    <Compile Include="Commands\Shapes\CircleCommand.cs" />
+    <Compile Include="Commands\Screen\ClearScreen.cs" />
+    <Compile Include="Interface\ICommand.cs" />
+    <Compile Include="Interface\IGraphicsCommand.cs" />
     <Compile Include="MultiLineForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,9 +99,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Commands\" />
-    <Folder Include="Interface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

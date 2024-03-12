@@ -1,41 +1,32 @@
-﻿using ASE_Programming_Lang.Interface;
+﻿using ASE.Interface;
+using System.Drawing;
+using System.Windows.Forms;
 
-namespace ASE_Programming_Lang.Commands.Shapes
+namespace ASE.Commands.Shapes
 {
-    /// <summary>
-    /// Represents a command to draw a circle on the canvas.
-    /// </summary>
     public class CircleCommand : IGraphicsCommand
     {
-        /// <inheritdoc/>
         public void Execute(Graphics graphics, string[] argument, Canvas canvas)
         {
-            // Get current position, drawing pen, and command text box from the canvas
             Point currentPosition = canvas.CurrentPosition;
             Pen drawingPen = canvas.DrawingPen;
             TextBox commandTextBox = canvas.CommandTextBox;
 
-            // Check if a valid radius is provided as an argument
             if (argument.Length == 1 && int.TryParse(argument[0], out int radius))
             {
-                // Calculate coordinates for the bounding rectangle of the circle
                 int x = currentPosition.X - radius;
                 int y = currentPosition.Y - radius;
 
-                // Draw or fill the circle based on canvas settings
                 if (canvas.IsFilling)
                 {
-                    // Fill the circle
                     SolidBrush brush = new SolidBrush(canvas.FillColor);
                     graphics.FillEllipse(brush, x, y, 2 * radius, 2 * radius);
                 }
                 else
                 {
-                    // Draw the circle
                     graphics.DrawEllipse(drawingPen, x, y, 2 * radius, 2 * radius);
                 }
 
-                // Use Invoke to update the commandTextBox on the UI thread
                 commandTextBox.Invoke((MethodInvoker)delegate
                 {
                     commandTextBox.Clear();
@@ -43,8 +34,7 @@ namespace ASE_Programming_Lang.Commands.Shapes
             }
             else
             {
-                // Show error message for invalid arguments
-                MessageBox.Show("Invalid arguments for 'circle' command. Please provide a valid radius.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid arguments for 'Circle' command. Please provide a valid value for radius.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

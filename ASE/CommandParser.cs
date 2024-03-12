@@ -17,46 +17,34 @@ namespace ASE
 
         private void ParseCommand(string commandText)
         {
-            string[] commandParts = commandText.Split(' ', StringSplitOptions.RemoveEmptyEntries);
-
-            if (commandParts.Length == 0)
+            Thread parseThread = new Thread(() =>
             {
-                Command = "";
-                Argument = Array.Empty<string>();
-                return;
-            }
+                string[] commandParts = commandText.Split(' ');
 
-            Command = commandParts[0];
+                if (commandParts.Length == 0)
+                {
+                    Command = "";
+                    Argument = Array.Empty<string>();
+                    return;
+                }
 
-            if (commandParts.Length > 1)
-            {
-                Argument = ParseArguments(commandParts, 1);
-            }
-            else
-            {
-                Argument = Array.Empty<string>();
-            }
+                Command = commandParts[0];
+                Argument = commandParts.Length > 1 ? commandParts.Skip(1).ToArray() : Array.Empty<string>();
+            });
+
+            parseThread.Start();
+            parseThread.Join();
         }
-
 
         public CommandParser(string commandText)
         {
-            Thread parseThread = new Thread(() => ParseCommand(commandText));
-            parseThread.Start();
-            parseThread.Join();
+            ParseCommand(commandText);
         }
 
 
         private string[] ParseArguments(string[] commandParts, int startIndex)
         {
-            List<string> arguments = new List<string>();
-
-            for (int i = startIndex; i < commandParts.Length; i++)
-            {
-                arguments.Add(commandParts[i]);
-            }
-
-            return arguments.ToArray();
+            return commandParts.Skip(startIndex).ToArray();
         }
     }
 }
