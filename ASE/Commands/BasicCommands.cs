@@ -23,7 +23,9 @@ namespace ASE.Commands
             { "clear", new ClearScreen() },
             { "pen", new PenCommand() }, 
             { "fill", new FillCommand() },
-            { "reset", new ResetCommand() },
+            { "reset", new ResetCommand() },           
+            { "moveto", new MoveToCommand() },            
+            { "drawto", new DrawToCommand() },
         };
 
         public bool ContainsBasicCommand(string command)
@@ -56,7 +58,9 @@ namespace ASE.Commands
                         case "pen":
                         case "fill":
                         case "reset":
-                        basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
+                        case "moveto":
+                        case "drawto":
+                            basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
                             break;
 
                         default:
