@@ -111,5 +111,20 @@ namespace ASE
             get { return isFill; }
             set { isFill = value; }
         }
+
+        private void pictureBox_MouseMove(object sender, MouseEventArgs e)
+        {
+            Point cursorPosition = e.Location;
+
+            this.Text = $"Mouse Position: {cursorPosition.X}, {cursorPosition.Y}";
+        }
+
+        private void pictureBox_Paint(object sender, PaintEventArgs e)
+        {
+            int dotSize = 3;
+            int x = Position.X - dotSize / 2;
+            int y = Position.Y - dotSize / 2;
+            e.Graphics.FillEllipse(Brushes.Blue, x, y, dotSize, dotSize);
+        }
     }
 }
