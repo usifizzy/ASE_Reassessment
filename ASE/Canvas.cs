@@ -57,7 +57,9 @@ namespace ASE
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-
+            string command = "reset";
+            CommandParser parser = new CommandParser(command);
+            BasicCommands.ExecuteDrawing(parser);
         }
 
         private void runScriptBtn_Click(object sender, EventArgs e)

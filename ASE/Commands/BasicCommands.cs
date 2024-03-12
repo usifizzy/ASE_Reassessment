@@ -23,6 +23,7 @@ namespace ASE.Commands
             { "clear", new ClearScreen() },
             { "pen", new PenCommand() }, 
             { "fill", new FillCommand() },
+            { "reset", new ResetCommand() },
         };
 
         public bool ContainsBasicCommand(string command)
@@ -54,7 +55,8 @@ namespace ASE.Commands
                         case "clear":
                         case "pen":
                         case "fill":
-                            basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
+                        case "reset":
+                        basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
                             break;
 
                         default:
