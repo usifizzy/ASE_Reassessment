@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.multiCommandTextBox = new System.Windows.Forms.RichTextBox();
             this.RunScriptBtn = new System.Windows.Forms.Button();
             this.LoadScriptBtn = new System.Windows.Forms.Button();
             this.SaveScriptBtn = new System.Windows.Forms.Button();
             this.ResetScript = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // multiCommandTextBox
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(309, 406);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.multiCommandTextBox.Location = new System.Drawing.Point(12, 12);
+            this.multiCommandTextBox.Name = "multiCommandTextBox";
+            this.multiCommandTextBox.Size = new System.Drawing.Size(309, 406);
+            this.multiCommandTextBox.TabIndex = 0;
+            this.multiCommandTextBox.Text = "";
             // 
             // RunScriptBtn
             // 
@@ -93,7 +93,7 @@
             this.ResetScript.TabIndex = 4;
             this.ResetScript.Text = "Reset";
             this.ResetScript.UseVisualStyleBackColor = false;
-            this.ResetScript.Click += new System.EventHandler(this.ResetScript_Click);
+
             // 
             // MultiLineForm
             // 
@@ -105,7 +105,7 @@
             this.Controls.Add(this.SaveScriptBtn);
             this.Controls.Add(this.LoadScriptBtn);
             this.Controls.Add(this.RunScriptBtn);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.multiCommandTextBox);
             this.Name = "MultiLineForm";
             this.Text = "MultiLineForm";
             this.ResumeLayout(false);
@@ -114,7 +114,7 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox multiCommandTextBox;
         private System.Windows.Forms.Button RunScriptBtn;
         private System.Windows.Forms.Button LoadScriptBtn;
         private System.Windows.Forms.Button SaveScriptBtn;

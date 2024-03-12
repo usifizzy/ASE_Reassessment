@@ -55,7 +55,9 @@
     <Compile Include="CommandParser.cs" />
     <Compile Include="Commands\BasicCommands.cs" />
     <Compile Include="Commands\GraphicsCommands.cs" />
+    <Compile Include="Commands\Screen\DrawToCommand.cs" />
     <Compile Include="Commands\Screen\FillCommand.cs" />
+    <Compile Include="Commands\Screen\MoveToCommand.cs" />
     <Compile Include="Commands\Screen\PenCommand.cs" />
     <Compile Include="Commands\Screen\ResetCommand.cs" />
     <Compile Include="Commands\Shapes\CircleCommand.cs" />

@@ -64,7 +64,15 @@ namespace ASE
 
         private void runScriptBtn_Click(object sender, EventArgs e)
         {
-
+             try
+            {
+                MultiLineForm newWindow = new MultiLineForm(this);
+                newWindow.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error opening the new window: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void singleCommandBox_TextChanged(object sender, EventArgs e)
