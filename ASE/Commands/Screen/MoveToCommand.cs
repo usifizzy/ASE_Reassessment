@@ -14,10 +14,10 @@ namespace ASE.Commands.Screen
 
                 canvas.CurrentPosition = new Point(x, y);
 
-                commandTextBox.Invoke((MethodInvoker)delegate
+               /* commandTextBox.Invoke((MethodInvoker)delegate
                 {
                     commandTextBox.Clear();
-                });
+                });*/
             }
             else
             {

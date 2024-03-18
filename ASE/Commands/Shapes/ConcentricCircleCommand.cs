@@ -6,7 +6,7 @@ namespace ASE.Commands.Shapes
 {
     public class ConcentricCircleCommand : IGraphicsCommand
     {
-        public void Execute(Graphics graphics, string[] argument, Canvas canvas)
+        public void Execute(Graphics graphics, string[] argument, ICanvas canvas)
         {
             Point currentPosition = canvas.CurrentPosition;
             Pen drawingPen = canvas.DrawingPen;

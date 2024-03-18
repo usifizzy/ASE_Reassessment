@@ -6,7 +6,7 @@ namespace ASE.Commands.Shapes
 {
     public class RectangleCommand : IGraphicsCommand
     {
-        public void Execute(Graphics graphics, string[] argument, Canvas canvas)
+        public void Execute(Graphics graphics, string[] argument, ICanvas canvas)
         {
             Point currentPosition = canvas.CurrentPosition;
             Pen drawingPen = canvas.DrawingPen;
@@ -29,10 +29,10 @@ namespace ASE.Commands.Shapes
 
                     graphics.DrawRectangle(drawingPen, x, y, width, height);
 
-                    commandTextBox.Invoke((MethodInvoker)delegate
+                  /*  commandTextBox.Invoke((MethodInvoker)delegate
                     {
                         commandTextBox.Clear();
-                    });
+                    });*/
                 }
                 else
                 {

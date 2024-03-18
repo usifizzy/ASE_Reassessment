@@ -1,4 +1,5 @@
 ﻿using ASE.Commands;
+using ASE.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ASE
 {
-    public partial class Canvas : Form
+    public partial class Canvas : Form, ICanvas
     {
         private bool isFill = false;
         private Point Position = new Point(388, 294);
@@ -134,5 +135,18 @@ namespace ASE
             int y = Position.Y - dotSize / 2;
             e.Graphics.FillEllipse(Brushes.Blue, x, y, dotSize, dotSize);
         }
+
+        public void Invoke(Action action)
+        {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(action);
+            }
+            else
+            {
+                action();
+            }
+        }
+
     }
 }

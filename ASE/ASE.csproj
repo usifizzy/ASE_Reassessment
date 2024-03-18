@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>ASE</RootNamespace>
     <AssemblyName>ASE</AssemblyName>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -65,6 +66,7 @@
     <Compile Include="Commands\Shapes\ConcentricCircleCommand.cs" />
     <Compile Include="Commands\Shapes\Rectangle.cs" />
     <Compile Include="Commands\Shapes\Triangle.cs" />
+    <Compile Include="Interface\ICanvas.cs" />
     <Compile Include="Interface\ICommand.cs" />
     <Compile Include="Interface\IGraphicsCommand.cs" />
     <Compile Include="MultiLineForm.cs">
@@ -89,6 +91,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

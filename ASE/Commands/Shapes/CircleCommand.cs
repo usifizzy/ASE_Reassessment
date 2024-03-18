@@ -6,7 +6,7 @@ namespace ASE.Commands.Shapes
 {
     public class CircleCommand : IGraphicsCommand
     {
-        public void Execute(Graphics graphics, string[] argument, Canvas canvas)
+        public void Execute(Graphics graphics, string[] argument, ICanvas canvas)
         {
             Point currentPosition = canvas.CurrentPosition;
             Pen drawingPen = canvas.DrawingPen;
@@ -27,10 +27,10 @@ namespace ASE.Commands.Shapes
                     graphics.DrawEllipse(drawingPen, x, y, 2 * radius, 2 * radius);
                 }
 
-                commandTextBox.Invoke((MethodInvoker)delegate
+                /*commandTextBox.Invoke((MethodInvoker)delegate
                 {
                     commandTextBox.Clear();
-                });
+                });*/
             }
             else
             {

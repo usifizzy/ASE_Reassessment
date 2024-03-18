@@ -33,10 +33,10 @@ namespace ASE.Commands.Screen
                 return;
             }
 
-            commandTextBox.Invoke((MethodInvoker)delegate
+            /*commandTextBox.Invoke((MethodInvoker)delegate
             {
                 commandTextBox.Clear();
-            });
+            });*/
         }
     }
 }

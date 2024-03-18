@@ -16,10 +16,10 @@ namespace ASE.Commands.Screen
             canvas.IsFilling = false;
 
 
-            commandTextBox.Invoke((MethodInvoker)delegate
+           /* commandTextBox.Invoke((MethodInvoker)delegate
             {
                 commandTextBox.Clear();
-            });
+            });*/
         }
     }
 }
