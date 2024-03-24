@@ -5,7 +5,7 @@ namespace ASE.Commands.Screen
 {
     public class FillCommand : ICommand
     {
-        public void Execute(Canvas canvas, string[] argument)
+        public void Execute(DrawingCanvas canvas, string[] argument)
         {
             TextBox commandTextBox = canvas.CommandTextBox;
 

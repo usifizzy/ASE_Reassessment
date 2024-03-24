@@ -47,11 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Canvas.cs">
+    <Compile Include="DrawingCanvas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Canvas.Designer.cs">
-      <DependentUpon>Canvas.cs</DependentUpon>
+    <Compile Include="DrawingCanvas.Designer.cs">
+      <DependentUpon>DrawingCanvas.cs</DependentUpon>
     </Compile>
     <Compile Include="CommandParser.cs" />
     <Compile Include="Commands\BasicCommands.cs" />
@@ -77,8 +77,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Canvas.resx">
-      <DependentUpon>Canvas.cs</DependentUpon>
+    <EmbeddedResource Include="DrawingCanvas.resx">
+      <DependentUpon>DrawingCanvas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MultiLineForm.resx">
       <DependentUpon>MultiLineForm.cs</DependentUpon>

@@ -1,8 +1,6 @@
-# Windform Application README
-
 ## Introduction
 
-The Windform application is a versatile programming environment that allows users to execute both basic and graphic commands to create shapes on a canvas within the application's interface. This README serves as a guide to understanding the application's functionality, structure, and usage.
+The ASE application is a versatile programming environment that allows users to execute both basic and graphic commands to create shapes on a canvas within the application's interface. This README serves as a guide to understanding the application's functionality, structure, and usage.
 
 ## Features
 
@@ -27,7 +25,7 @@ The Windform application is a versatile programming environment that allows user
 
 ### Usage
 
-1. Launch the Windform application.
+1. Launch the ASE application.
 2. Enter commands in the provided command input area.
 3. Press Enter or click on the Execute button to execute the command.
 4. View the drawn shapes on the canvas area.
@@ -35,7 +33,7 @@ The Windform application is a versatile programming environment that allows user
 
 ## Application Structure
 
-The Windform application consists of the following key components:
+The ASE application consists of the following key components:
 
 1. **Canvas**: Represents the drawing area where shapes are rendered.
 2. **CommandParser**: Parses user input into command and argument.

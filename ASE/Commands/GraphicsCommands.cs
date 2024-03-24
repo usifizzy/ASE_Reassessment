@@ -9,11 +9,11 @@ namespace ASE.Commands
 {
     public class GraphicsCommands
     {
-        private Canvas canvas;
+        private DrawingCanvas canvas;
         private readonly object _locker = new object();
 
 
-        public GraphicsCommands(Canvas canvas)
+        public GraphicsCommands(DrawingCanvas canvas)
         {
             this.canvas = canvas;
         }

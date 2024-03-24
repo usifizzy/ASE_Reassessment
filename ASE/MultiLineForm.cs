@@ -14,20 +14,13 @@ namespace ASE
 {
     public partial class MultiLineForm : Form
     {
-        private Canvas canvas;
+        private DrawingCanvas canvas;
 
-        public MultiLineForm(Canvas canvas)
+        public MultiLineForm(DrawingCanvas canvas)
         {
             InitializeComponent();
             this.canvas = canvas;
         }
-
-        /*private void ResetScript_Click(object sender, EventArgs e)
-        {
-            *//*string command = "reset";
-            CommandParser parser = new CommandParser(command);
-            BasicCommands.ExecuteDrawing(parser);*//*
-        }*/
 
 
         private async void RunScriptBtn_Click(object sender, EventArgs e)

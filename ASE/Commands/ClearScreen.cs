@@ -6,7 +6,7 @@ namespace ASE.Commands.Screen
 
     public class ClearScreen : ICommand
     {
-        public void Execute(Canvas canvas, string[] args)
+        public void Execute(DrawingCanvas canvas, string[] args)
         {
             TextBox commandTextBox = canvas.CommandTextBox;
 

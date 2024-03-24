@@ -2,6 +2,6 @@
 {
     public interface ICommand
     {
-        void Execute(Canvas canvas, string[] arguments);
+        void Execute(DrawingCanvas canvas, string[] arguments);
     }
 }

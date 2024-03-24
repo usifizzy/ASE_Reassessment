@@ -43,7 +43,7 @@ namespace ASE.Commands.Screen
             { "orchid", Color.Orchid }
         };
 
-        public void Execute(Canvas canvas, string[] argument)
+        public void Execute(DrawingCanvas canvas, string[] argument)
         {
             TextBox commandTextBox = canvas.CommandTextBox;
 

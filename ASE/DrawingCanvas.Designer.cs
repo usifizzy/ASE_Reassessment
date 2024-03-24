@@ -1,6 +1,6 @@
 ﻿namespace ASE
 {
-    partial class Canvas
+    partial class DrawingCanvas
     {
         /// <summary>
         /// Required designer variable.
@@ -55,7 +55,6 @@
             this.singleCommandBox.Name = "singleCommandBox";
             this.singleCommandBox.Size = new System.Drawing.Size(199, 29);
             this.singleCommandBox.TabIndex = 1;
-            this.singleCommandBox.TextChanged += new System.EventHandler(this.singleCommandBox_TextChanged);
             // 
             // runBtn
             // 
@@ -68,7 +67,7 @@
             this.runBtn.TabIndex = 2;
             this.runBtn.Text = "Run";
             this.runBtn.UseVisualStyleBackColor = false;
-            this.runBtn.Click += new System.EventHandler(this.runBtn_Click);
+            this.runBtn.Click += new System.EventHandler(this.RunButton_Click);
             // 
             // ClearBtn
             // 
@@ -81,7 +80,7 @@
             this.ClearBtn.TabIndex = 3;
             this.ClearBtn.Text = "Clear";
             this.ClearBtn.UseVisualStyleBackColor = false;
-            this.ClearBtn.Click += new System.EventHandler(this.ClearBtn_Click);
+            this.ClearBtn.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // resetBtn
             // 
@@ -94,7 +93,7 @@
             this.resetBtn.TabIndex = 4;
             this.resetBtn.Text = "Reset";
             this.resetBtn.UseVisualStyleBackColor = false;
-            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            this.resetBtn.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // runScriptBtn
             // 
@@ -107,7 +106,7 @@
             this.runScriptBtn.TabIndex = 5;
             this.runScriptBtn.Text = "MultiLine";
             this.runScriptBtn.UseVisualStyleBackColor = false;
-            this.runScriptBtn.Click += new System.EventHandler(this.runScriptBtn_Click);
+            this.runScriptBtn.Click += new System.EventHandler(this.RunScriptButton_Click);
             // 
             // Canvas
             // 

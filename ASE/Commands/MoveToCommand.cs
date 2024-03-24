@@ -6,7 +6,7 @@ namespace ASE.Commands.Screen
 {
     public class MoveToCommand : ICommand
     {
-        public void Execute(Canvas canvas, string[] arguments)
+        public void Execute(DrawingCanvas canvas, string[] arguments)
         {
             if (arguments.Length == 2 && int.TryParse(arguments[0], out int x) && int.TryParse(arguments[1], out int y))
             {
