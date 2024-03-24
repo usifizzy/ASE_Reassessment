@@ -350,7 +350,7 @@ namespace ASE
             {
                 MessageBox.Show("Endif not found for the if statement starting at line " + startLine, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             });
-            return -1; // Return an invalid line number
+            return -1; 
         }
 
         private bool EvaluateCondition(string condition, Dictionary<string, int> variables)

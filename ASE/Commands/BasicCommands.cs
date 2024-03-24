@@ -21,10 +21,10 @@ namespace ASE.Commands
         private Dictionary<string, ICommand> basicCommands = new Dictionary<string, ICommand>
         {
             { "clear", new ClearScreen() },
-            { "pen", new PenCommand() }, 
+            { "color", new PenCommand() }, 
             { "fill", new FillCommand() },
             { "reset", new ResetCommand() },           
-            { "moveto", new MoveToCommand() },            
+            { "point", new MoveToCommand() },            
             { "drawto", new DrawToCommand() },
         };
 
@@ -55,10 +55,10 @@ namespace ASE.Commands
                     switch (parser.Command.ToLower())
                     {
                         case "clear":
-                        case "pen":
+                        case "color":
                         case "fill":
                         case "reset":
-                        case "moveto":
+                        case "point":
                         case "drawto":
                             basicCommands[parser.Command.ToLower()].Execute(canvas, parser.Argument);
                             break;
