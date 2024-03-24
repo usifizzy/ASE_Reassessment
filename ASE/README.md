@@ -118,7 +118,7 @@ height = 100
 count = 1
 
 # Draw shapes in a loop
-while count <= 5
+while count < 5
     # Draw a circle
     color blue
     circle radius
@@ -150,7 +150,7 @@ endloop
 # Fill shapes with alternating colors
 fill on
 count = 1
-while count <= 5
+while count < 5
     # Draw a filled circle
     color yellow
     circle radius
