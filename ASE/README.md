@@ -116,48 +116,71 @@ radius = 50
 width = 100
 height = 100
 count = 1
-while count < 5
-color blue
-circle radius
-color red
-rectangle width height
-color green
-triangle height
-color cyan
-concircle radius 3
-point 200 200
-radius = radius + 20
-width = width + 50
-height = height + 30
-count = count + 1
-point 300 300
+
+# Draw shapes in a loop
+while count <= 5
+    # Draw a circle
+    color blue
+    circle radius
+    
+    # Draw a rectangle
+    color red
+    rectangle width height
+    
+    # Draw a triangle
+    color green
+    triangle height
+    
+    # Draw a concentric circle
+    color cyan
+    concircle radius 3
+    
+    # Move to a new position
+    point 200 200
+    
+    # Increase parameters for next iteration
+    radius = radius + 20
+    width = width + 50
+    height = height + 30
+    
+    # Increase count
+    count = count + 1
 endloop
-reset
 
 # Fill shapes with alternating colors
 fill on
 count = 1
-while count < 5
-color yellow
-circle radius
-color orange
-rectangle width height
-color purple
-triangle height
-color pink
-concircle radius 3
-drawto 400 400
-radius = radius + 20
-width = width + 50
-height = height + 30
-count = count + 1
+while count <= 5
+    # Draw a filled circle
+    color yellow
+    circle radius
+    
+    # Draw a filled rectangle
+    color orange
+    rectangle width height
+    
+    # Draw a filled triangle
+    color purple
+    triangle height
+    
+    # Draw concentric filled circles
+    color pink
+    concircle radius 3
+    
+    # Move to a new position
+    drawto 400 400
+    
+    # Increase parameters for next iteration
+    radius = radius + 20
+    width = width + 50
+    height = height + 30
+    
+    # Increase count
+    count = count + 1
 endloop
-reset
-
 
 # Reset parameters and configurations
 reset
-
 
 ## Contributing
 
