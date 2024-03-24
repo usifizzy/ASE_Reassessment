@@ -1,0 +1,21 @@
+radius = 10
+width = 70
+height = 90
+fill on
+count = 1
+while count < 3
+color purple
+circle radius
+color orange
+rectangle width height
+color purple
+triangle height
+color pink
+concircle radius 3
+drawto 100 100
+radius = radius + 20
+width = width + 50
+height = height + 30
+count = count + 1
+endloop
+reset

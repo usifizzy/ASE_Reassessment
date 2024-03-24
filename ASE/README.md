@@ -100,6 +100,65 @@ To test a command, follow these steps:
 Replace the arguments with appropriate values based on the command's requirements.
 
 
+## Multiline Script
+
+To execute multiline commands, follow these steps:
+
+1. Enter multiline commands directly into the multiline input area or load an existing script.
+2. Click the Run Script button to execute the multiline commands.
+
+### Sample Script
+
+# Multiline Script Demo
+
+# Set initial parameters
+radius = 50
+width = 100
+height = 100
+count = 1
+while count < 5
+color blue
+circle radius
+color red
+rectangle width height
+color green
+triangle height
+color cyan
+concircle radius 3
+point 200 200
+radius = radius + 20
+width = width + 50
+height = height + 30
+count = count + 1
+point 300 300
+endloop
+reset
+
+# Fill shapes with alternating colors
+fill on
+count = 1
+while count < 5
+color yellow
+circle radius
+color orange
+rectangle width height
+color purple
+triangle height
+color pink
+concircle radius 3
+drawto 400 400
+radius = radius + 20
+width = width + 50
+height = height + 30
+count = count + 1
+endloop
+reset
+
+
+# Reset parameters and configurations
+reset
+
+
 ## Contributing
 
 Contributions to the Windform application are welcome! If you have suggestions for new features, improvements, or bug fixes, please submit a pull request.

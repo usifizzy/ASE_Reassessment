@@ -136,7 +136,7 @@ namespace ASE
             e.Graphics.FillEllipse(Brushes.Blue, x, y, dotSize, dotSize);
         }
 
-        public void Invoke(Action action)
+       /* public void Invoke(Action action)
         {
             if (this.InvokeRequired)
             {
@@ -146,7 +146,7 @@ namespace ASE
             {
                 action();
             }
-        }
+        }*/
 
     }
 }
