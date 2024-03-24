@@ -35,7 +35,7 @@ The ASE application is a versatile programming environment that allows users to 
 
 The ASE application consists of the following key components:
 
-1. **Canvas**: Represents the drawing area where shapes are rendered.
+1. **DrawingCanvas**: Represents the drawing area where shapes are rendered.
 2. **CommandParser**: Parses user input into command and argument.
 3. **BasicCommands**: Handles basic commands such as clearing the screen, changing colors, etc.
 4. **GraphicsCommands**: Handles graphic commands such as drawing circles, rectangles, etc.
