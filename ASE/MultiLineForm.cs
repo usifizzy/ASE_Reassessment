@@ -443,5 +443,10 @@ namespace ASE
 
             this.Text = $"Mouse Position: {mousePosition.X}, {mousePosition.Y}";
         }
+
+        private void multiCommandTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

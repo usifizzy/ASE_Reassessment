@@ -11,7 +11,7 @@ namespace Test
         public void Execute_FillCommand_OnMode()
         {
             // Arrange
-            Canvas canvas = new Canvas();
+            DrawingCanvas canvas = new DrawingCanvas();
             FillCommand fillCommand = new FillCommand();
             string[] arguments = { "on" };
 
@@ -28,7 +28,7 @@ namespace Test
         public void Execute_FillCommand_OffMode()
         {
             // Arrange
-            Canvas canvas = new Canvas();
+            DrawingCanvas canvas = new DrawingCanvas();
             FillCommand fillCommand = new FillCommand();
             string[] arguments = { "off" }; // Turning off filling mode
 
@@ -44,7 +44,7 @@ namespace Test
         public void Execute_FillCommand_InvalidMode()
         {
             // Arrange
-            Canvas canvas = new Canvas();
+            DrawingCanvas canvas = new DrawingCanvas();
             FillCommand fillCommand = new FillCommand();
             string[] arguments = { "invalid" }; // Using invalid mode
 

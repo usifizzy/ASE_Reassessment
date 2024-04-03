@@ -13,7 +13,7 @@ namespace Test
         {
             // Arrange
             PenCommand penCommand = new PenCommand();
-            Canvas canvas = new Canvas(); // Create an instance of the canvas
+            DrawingCanvas canvas = new DrawingCanvas(); // Create an instance of the canvas
 
             // Act
             penCommand.Execute(canvas, new string[] { "blue" });
@@ -29,7 +29,7 @@ namespace Test
         {
             // Arrange
             PenCommand penCommand = new PenCommand();
-            Canvas canvas = new Canvas(); // Create an instance of the canvas
+            DrawingCanvas canvas = new DrawingCanvas(); // Create an instance of the canvas
             Color initialDrawingColor = canvas.DrawingPen.Color;
             Color initialFillColor = canvas.FillColor;
 

@@ -21,7 +21,7 @@ namespace Test
             Bitmap bitmap = new Bitmap(100, 100);
             Graphics graphics = Graphics.FromImage(bitmap);
             string[] arguments = { }; //No arguments provided
-            Canvas canvas = new Canvas(); //You may need to mock this if it has dependencies
+            DrawingCanvas canvas = new DrawingCanvas(); //You may need to mock this if it has dependencies
 
             // Act
             circleCommand.Execute(graphics, arguments, canvas);

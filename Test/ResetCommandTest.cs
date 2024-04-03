@@ -13,7 +13,7 @@ namespace Test
         {
             // Arrange
             ResetCommand resetCommand = new ResetCommand();
-            Canvas canvas = new Canvas(); // Create an instance of the canvas
+            DrawingCanvas canvas = new DrawingCanvas(); // Create an instance of the canvas
 
             // Act
             resetCommand.Execute(canvas, new string[] { });

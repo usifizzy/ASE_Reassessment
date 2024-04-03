@@ -18,13 +18,13 @@ namespace Test
         public void Execute_MoveToCommand()
         {
             // Arrange
-            Canvas canvas = new Canvas();
+            DrawingCanvas canvas = new DrawingCanvas();
             BasicCommands basicCommands = new BasicCommands(canvas);
             string[] arguments = { "100", "100" };
             Point expectedPosition = new Point(100, 100);
 
             // Act
-            basicCommands.ExecuteDrawing(new CommandParser("moveto 100 100"));
+            basicCommands.ExecuteDrawing(new CommandParser("point 100 100"));
 
             // Assert
             Assert.AreEqual(expectedPosition, canvas.CurrentPosition);
@@ -35,7 +35,7 @@ namespace Test
         public void Execute_DrawToCommand()
         {
             // Arrange
-            Canvas canvas = new Canvas();
+            DrawingCanvas canvas = new DrawingCanvas();
             BasicCommands basicCommands = new BasicCommands(canvas);
             string[] arguments = { "200", "200" }; // Assuming destination coordinates
             Point expectedPosition = new Point(200, 200);

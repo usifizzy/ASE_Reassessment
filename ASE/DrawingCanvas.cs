@@ -133,5 +133,10 @@ namespace ASE
             get { return fillEnabled; }
             set { fillEnabled = value; }
         }
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
